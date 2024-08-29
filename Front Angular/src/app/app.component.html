@@ -1,0 +1,21 @@
+<!-- src/app/app.component.html -->
+<body>
+  <div class="header">
+    <h1>Gestión</h1>
+  </div>
+  <div class="button-container">
+    <div class="nav-item">
+      <img src="https://cdn.icon-icons.com/icons2/1508/PNG/512/systemusers_104569.png" alt="Usuario" class="nav-image">
+      <button class="nav-button" (click)="redirectToUsuarios()">
+        Usuarios
+      </button>
+    </div>
+    <div class="nav-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/2000/2000860.png" alt="Cursos" class="nav-image">
+      <button class="nav-button" (click)="redirectToCursos()">
+        Cursos
+      </button>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</body>
